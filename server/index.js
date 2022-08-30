@@ -9,7 +9,7 @@ app.use(
   "/graphql",
   graphqlHTTP({
     schema,
-    graphiql: process.env.NODE === "development",
+    graphiql: true,
   })
 );
 
